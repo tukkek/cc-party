@@ -1,0 +1,23 @@
+<title>Final Fantasy IX party generator</title>
+
+<meta charset='utf8'>
+<link rel='stylesheet' href='style.css'>
+<meta name='viewport' content='width=device-width,initial-scale=1'>
+
+<div id='guide'><a href='https://www.rpgsite.net/feature/12641-chrono-cross-character-recruitment-guide-missable-characters-how-to-get-all-party-members' target='_blank'>Recruitment guide.</a></div>
+
+<strong>Party priority:</strong>
+<ol id='party'></ol>
+
+<script type='module'>
+  import * as hero from './hero.js'
+  
+  hero.setup()
+  let result=document.querySelector('#party')
+  for(let p of hero.heroes){
+    let i=document.createElement('li')
+    i.textContent=p.name
+    i.classList.add(p.focus)
+    result.appendChild(i)
+  }
+</script>

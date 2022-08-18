@@ -1,0 +1,19 @@
+.yellow{
+  color:orange;
+}
+.white{
+  color:grey;
+}
+.blue{
+  color:blue;
+}
+.green{
+  color:green;
+}
+.red{
+  color:red;
+}
+#guide{
+  margin-bottom:1em;
+  font-size:small;
+}
